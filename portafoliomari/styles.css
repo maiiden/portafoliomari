@@ -399,9 +399,9 @@ nav{
   .angular    { top: 50%; left: 30%; background-image: url('img/angular.webp'); }
   .ts         { top: 48%; left: 60%; background-image: url('img/ts.webp'); }
   .wordpress  { top: 35%; left: 65%; background-image: url('img/wordpress.webp'); }
-  .figma      { top: 32%; left: 50%; background-image: url('img/figma.png'); }
+  .figma      { top: 32%; left: 50%; background-image: url('img/figma.webp'); }
   .bootstrap  { top: 60%; left: 25%; background-image: url('img/bootstrap.png'); }
-  .canva      { top: 62%; left: 30%; background-image: url('img/canva.webp'); }
+  .canva      { top: 62%; left: 40%; background-image: url('img/canva.webp'); }
   .aos        { top: 65%; left: 55%; background-image: url('img/aos.png'); }
   .adobe      { top: 58%; left: 70%; background-image: url('img/adobe.png'); }
   .mariadb    { top: 45%; left: 75%; background-image: url('img/mariadb.png'); }
