@@ -79,8 +79,7 @@
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 88%;
 }
 
 
@@ -94,6 +93,7 @@
 #header.shadow{
   box-shadow: 0 4px 6px var(--color-secundario);
 }
+
 
 nav a{
     position: relative;
@@ -259,13 +259,28 @@ nav{
     font: bold 0.9rem "IBM Plex Sans", sans-serif;
 }
 
-.right-side .pulse{
-    position: relative;
+.right-side #pulse{
+    position:relative;
     width: 6px;
     height: 20px;
     background: var(--color-secundario);
     border-radius: 6px;
     animation: pulse 1s infinite;
+}
+#pulsetitulos{
+    width: 7px;
+    height: 40px;
+    background: var(--color-secundario);
+    border-radius: 6px;
+    animation: pulse 1s infinite;
+    margin-right: 10px; 
+}
+
+.titulo-con-pulso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px; 
 }
 
 #sobremi{
@@ -344,11 +359,12 @@ nav{
 }
 
 .botonsobremi:hover{
-    background-color: transparent;
-    border: 2px solid var(--color-secundario);
-    color: var(--color-secundario);
+    background-color: var(--texto);
+    border: 1px solid var(--texto);
+    color: var(--fondo);
     transform: scale(1.02);
-    transition: all 0.4s linear;
+    transition: all 0.1s linear;
+
 }
 
 #sobremi{
@@ -384,12 +400,11 @@ nav{
   }
   
   .tituloh {
-     font: italic bold 4rem "IBM Plex Sans", sans-serif;
+     font:600 3rem "IBM Plex Sans", sans-serif;
     text-align: center;
     margin-top: 5%;
     -webkit-text-stroke-width: 0px;
     color: var(--titulos);
-  -webkit-text-stroke-color: var(--color-secundario);
   }
   
   /* Íconos reubicados más abajo */
@@ -435,16 +450,10 @@ nav{
     align-items: center;
   }
 
-  .contenedorproyect-titu hr {
-    flex-grow: 1;
-    height: 2.5px;
-    background-color: var(--color-secundario);
-    border: none;
-    max-width: 1.5%;
-  }
+ 
 
 .contenedorproyect-titu h2{
-    font: italic bold 3rem "IBM Plex Sans", sans-serif;
+    font: 600 3rem "IBM Plex Sans", sans-serif;
     color: var(--titulos);
     white-space: nowrap;
 }
@@ -666,6 +675,17 @@ gap: 1.5rem;
     }
   }
 
+  @keyframes pulsetitulos {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 
 
@@ -722,6 +742,12 @@ gap: 1.5rem;
 
 .contenedor-texto p{
 font-size: 1rem;
+}
+
+.contenedorproyect-titu h2{
+    font: 600 2.5rem "IBM Plex Sans", sans-serif;
+    color: var(--titulos);
+    white-space: nowrap;
 }
 
 
@@ -783,6 +809,15 @@ font-size: 1rem;
   
 }
 
+#pulsetitulos{
+    width: 7px;
+    height: 35px;
+    background: var(--color-secundario);
+    border-radius: 6px;
+    animation: pulse 1s infinite;
+    margin-right: 10px; 
+}
+
 .contenedor .imagen img{
   width: 100%;
 }
@@ -838,7 +873,7 @@ font-size: 1rem;
 .tituloh {
   text-align: center;
   -webkit-text-stroke-width: 0px;
-  font: italic bold 2.5rem "IBM Plex Sans", sans-serif;
+  font: 600 2.5rem "IBM Plex Sans", sans-serif;
   color: var(--titulos);
   white-space: nowrap;
 }

@@ -30,10 +30,8 @@
               <a href="#sobremi">Sobre mí</a>
               <a href="#proyectos">Proyectos</a>
               <a href="#habilidades">Habilidades</a>
+              <a href="#contacto">Contacto</a></a>
             </nav>
-            <div data-aos="fade-down" data-aos-delay="200" >
-                <a href="#contacto"><button> ¡Contactame! </button></a>
-            </div>
       </header>
 
       <section id="inicio" class="hero">
@@ -44,7 +42,7 @@
             <div class="right-side" data-aos="fade-up-left" data-aos-delay="300">
               <p>Disponibilidad</p>
               <h1>
-                <div class="pulse"></div>
+                <div id="pulse"></div>
                 Horas Personalizadas
               </h1>
             </div>
@@ -66,7 +64,7 @@
         <div class="contenedor">
             <div class="sobremi">
                 <h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">Sobre mí</h2>
-                <h1 data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">Maria Elena</h1>
+                <h1 data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">María Elena</h1>
             </div>
             <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="imagen">
                 <img src="img/yo.jpg" alt="perfil">
@@ -92,9 +90,15 @@
 
 
       <section id="habilidades">
+        
         <h2 class="tituloh" data-aos="fade-up" data-aos-duration="800">
-          HABILIDADES
-          <span class="pulse"></span></h2>
+        <span class="titulo-con-pulso">
+      <div id="pulsetitulos"></div>
+        HABILIDADES
+       </span>
+        </h2>
+          
+          
 
         <div class="icon html" data-aos="zoom-in" data-aos-delay="100"></div>
         <div class="icon css" data-aos="zoom-in" data-aos-delay="200"></div>
@@ -116,7 +120,8 @@
 
       <section id="proyectos" class="proyectos">
         <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="300" style="margin-bottom: 2%;" class="contenedorproyect-titu">
-          <hr><hr>
+          <span class="titulo-con-pulso"></span>
+          <div id="pulsetitulos"></div>
           <h2  class="proyectotitulo">PROYECTOS</h2>
         </div>
        
@@ -200,10 +205,10 @@
           </div>
           <form action="https://formsubmit.co/mecolio04@gmail.com?captcha=false" method="POST" class="formulario" data-aos="zoom-in" data-aos-duration="800">
   
-            <input type="text" name="nombre" placeholder="Tu nombre" required 
+            <input type="text" name="nombre" placeholder="Nombre" required 
                    data-aos="fade-up" data-aos-delay="100">
             
-            <input type="email" name="email" placeholder="Tu correo electrónico" required 
+            <input type="email" name="email" placeholder="Correo Electrónico" required 
                    data-aos="fade-up" data-aos-delay="200">
             
             <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required 
